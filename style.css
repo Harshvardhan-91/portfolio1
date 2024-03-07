@@ -524,6 +524,7 @@ p {
 }
 #footer .social-item:hover img {
   filter: grayscale(0);
+  border: 2px solid black;
 }
 #footer p {
   color: white;
