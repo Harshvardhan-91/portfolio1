@@ -12,6 +12,40 @@ html {
 a {
   text-decoration: none;
 }
+.con1 {
+  display: inline;
+}
+.contact1 .con1 img {
+  filter: grayscale(12);
+}
+.con2 {
+  display: inline;
+}
+.con3 {
+  display: inline;
+}
+.con4 {
+  display: inline;
+}
+.contact1 {
+  padding: 12px;
+  display: flex;
+  width: 50%;
+  height: auto;
+  gap: 5px;
+  justify-content: space-around;
+  background-color: linear-gradient(196, 196, 196);
+  border-radius: 40px;
+  border: 2px solid white;
+  margin-top: 15px;
+}
+.contact1 img {
+  width: 30px;
+  height: 30px;
+}
+.contact1 img:hover {
+  filter: drop-shadow(2px 2px 4px #666667);
+}
 .container {
   min-height: 100vh;
   width: 100%;
@@ -44,7 +78,10 @@ p {
 .section-title span {
   color: crimson;
 }
-
+i {
+  height: 70px;
+  width: 50px;
+}
 .cta {
   display: inline-block;
   padding: 10px 30px;
@@ -524,7 +561,7 @@ p {
 }
 #footer .social-item:hover img {
   filter: grayscale(0);
-  border: 2px solid black;
+  filter: drop-shadow(2px 2px 4px #666667);
 }
 #footer p {
   color: white;
@@ -567,6 +604,11 @@ p {
 /* End Keyframes */
 
 /* Media Query For Tablet */
+@media only screen and (max-width: 500px) {
+  .contact1 {
+    display: none;
+  }
+}
 @media only screen and (min-width: 768px) {
   .cta {
     font-size: 2.5rem;
