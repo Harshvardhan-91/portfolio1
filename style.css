@@ -100,7 +100,7 @@ i {
   background-color: crimson;
 }
 .brand h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   color: white;
 }
@@ -550,6 +550,7 @@ i {
   display: flex;
   margin-bottom: 30px;
 }
+
 #footer .social-item {
   height: 30px;
   width: 30px;
@@ -743,3 +744,114 @@ i {
   }
 }
 /* End  Media Query For Desktop */
+.slider-container {
+  width: 720px;
+  margin: auto;
+  position: relative;
+}
+
+.slider-container .fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slider-container .slides .slider-numbers {
+  position: absolute;
+  padding: 15px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.slider-container .slides .slider-caption {
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+}
+
+.slider-container .prev,
+.slider-container .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.slider-container .next {
+  right: 0px;
+}
+
+.slider-container .prev:hover {
+  background: rgba(0, 0, 0, 0.6);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+}
+.slider-container .next:hover {
+  background: rgba(0, 0, 0, 0.6);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  cursor: pointer;
+}
+
+.slider-container .slider-bullets {
+  text-align: center;
+}
+
+.slider-container .slider-bullets .dots {
+  display: inline-block;
+  padding: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #808080;
+  border-radius: 50%;
+}
+
+.slider-container .slider-bullets .dots:hover {
+  background-color: #383838;
+  cursor: pointer;
+}
+
+.slider-container .slider-bullets .active {
+  background-color: #383838;
+}
+
+.slider-container img {
+  height: 400px;
+  width: 40%;
+  opacity: 0.29;
+}
+.slides {
+  position: relative;
+  display: inline-block;
+}
+.slides .slider-image img {
+  display: block;
+  width: 100%;
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+}
